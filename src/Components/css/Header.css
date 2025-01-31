@@ -1,0 +1,78 @@
+.header {
+  background-color: #04394e; /* Fundo azul */
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; /* Aumenta a altura */
+}
+
+.logo img {
+  height: 50px; /* Ajusta o tamanho do logotipo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem; /* Espaçamento entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  display: block;
+  color: #04394e; /* Azul escuro */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px; /* Área clicável */
+  background-color: #ffffff; /* Fundo branco dos links */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.nav-links a:hover {
+  background-color: rgb(248, 195, 0); /* Fundo azul no hover */
+  color: #04394e; /* Texto amarelo no hover */
+  transform: scale(1.1); /* Expande o link ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Ícones de redes sociais */
+.contact-icons {
+  display: flex; /* Organiza os ícones em uma linha */
+  gap: 1rem; /* Espaçamento entre os ícones */
+}
+
+.contact-icons a {
+  display: flex; /* Centraliza o ícone dentro do contêiner */
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Tamanho uniforme */
+  height: 40px;
+  border-radius: 30%; /* Deixa os contêineres arredondados */
+  overflow: hidden;
+  background-color: #ffffff; /* Garante que nada vaze */
+}
+
+.contact-icons img {
+  width: 60%; /* Proporção uniforme das imagens dentro dos contêineres */
+  height: 60%;
+  object-fit: contain; /* Ajusta a imagem sem distorção */
+}
+.contact-icons .insta img {
+  width: 45%; /* Se necessário, ajuste menor para o Instagram */
+}
+
+
+
+
