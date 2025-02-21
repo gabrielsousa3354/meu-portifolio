@@ -1,0 +1,113 @@
+/* Fundo da Página */
+.home {
+    display: flex;
+    flex-direction: column;
+    color: #04394e;
+    height: 100vh;
+  }
+  
+  /* Top Banner */
+.top-banner {
+   height: 80px;
+    width: 100%; /* Garante que a div ocupe toda a largura */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do h1 */
+    
+  }
+  
+  .top-banner h1 {
+   padding-top: 15px;
+    color: #04394e; /* Azul */
+    margin: 0;
+    text-transform: uppercase; /* Maiúsculas */
+    height: 100%;
+  }
+  
+  .top-banner h1 .thin-text {
+    font-weight: 300; /* Texto mais fino */
+   
+  }
+  
+  /* Divisória abaixo da frase */
+  .divider {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #f8c300 50%, #04394e 50%);
+    margin-top: 5px;
+  }
+  
+  
+  /* Conteúdo Principal com Fundo */
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 80px); /* Altura dinâmica (menos a altura do banner) */
+    padding: 20px 5%;
+  }
+  .features-list {
+    width: 30%;  /* A largura continua a mesma */
+    background-color: #04394e;
+    padding: 0px 30px;  /* Aumentei o padding para dar mais espaço ao redor dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.532);
+    border-radius: 5px;
+    height: auto;  /* Ajusta a altura automaticamente */
+   
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+   
+    padding: 15px 0;  /* Aumentei o padding vertical para separar mais os itens */
+  }
+  
+  .feature-item img {
+    width: 50px;  /* Aumentei o tamanho dos ícones */
+    height: 50px;
+    margin-right: 15px;  /* Aumentei a distância entre o ícone e o texto */
+  }
+  
+  .feature-item p {
+    margin: 0;
+    font-size: 1.5rem;  /* Aumentei o tamanho da fonte */
+    font-weight: 300;
+    color: #ffffff;
+  }
+  .feature-item:not(:last-child) {
+    border-bottom: 3px solid #f8c300;  /* Linha amarela mais grossa, aplicada a todos, exceto o último */
+  }
+ 
+  hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 0;
+  }
+  .central-message {
+    width: 30%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem; /* Aumentei o tamanho da fonte para a frase ficar maior */
+  }
+  
+  .main-text span {
+    display: block; /* Cada palavra ficará em uma linha separada */
+    font-size: 4rem; /* Ajustei o tamanho para as palavras não ficarem grandes demais */
+    font-weight: bold;
+    line-height: 0.8; /* Diminui o espaço entre as palavras */
+  }
+  
+  .main-text .thin {
+    font-weight: 300; /* Diminui a espessura da palavra "NO SEU" */
+    font-size: 3.5rem; /* Ajustei o tamanho da palavra fina */
+  }
+  
+  
+  
+  /* Divisão 3: Espaço Vazio */
+  .empty-space {
+    width: 30%;
+  }

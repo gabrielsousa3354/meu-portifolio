@@ -1,0 +1,124 @@
+/* Estilos gerais */
+.header {
+  background-color: #04394e; /* Fundo azul */
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  display: block;
+  color: #04394e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.nav-links a:hover {
+  background-color: rgb(248, 195, 0);
+  color: #04394e;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícones de redes sociais */
+.contact-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 30%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.contact-icons img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Empilha a navbar na vertical em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Coloca os links na vertical */
+    width: 100%; /* Ocupa toda a largura disponível */
+    align-items: flex-start;
+    gap: 1rem; /* Espaçamento entre os links */
+  }
+
+  .contact-icons {
+    margin-top: 10px; /* Dá um espaço extra para os ícones em telas pequenas */
+    justify-content: space-between;
+    width: 100%; /* Deixa os ícones ocupando toda a largura */
+  }
+
+  .contact-icons a {
+    width: 30px; /* Ajusta o tamanho dos ícones para telas menores */
+    height: 30px;
+  }
+
+  .logo img {
+    height: 40px; /* Ajusta o logo para telas menores */
+  }
+}
+
+/* Estilo responsivo para telas menores que 480px (móveis em geral) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px; /* Ajusta o padding da navbar */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte dos links */
+    padding: 8px 16px; /* Ajusta o padding dos links */
+  }
+
+  .logo img {
+    height: 35px; /* Ajusta o logo ainda mais */
+  }
+
+  .contact-icons {
+    flex-direction: column; /* Empilha os ícones em dispositivos menores */
+    gap: 0.5rem; /* Espaçamento reduzido entre os ícones */
+  }
+}

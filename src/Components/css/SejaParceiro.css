@@ -1,0 +1,200 @@
+.seja-parceiro-page {
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Poppins", serif;
+  background-color: #ebebeb;
+}
+.image-text-section {
+  position: relative;
+  width: 90%;
+  height: 500px; /* Defina a altura desejada para a seção */
+  margin: 20px auto; /* Centraliza horizontalmente */
+  overflow: hidden;
+  display: flex;
+  justify-content: center; /* Centraliza conteúdo interno horizontalmente */
+  align-items: center; /* Centraliza conteúdo interno verticalmente */
+}
+.text-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%; /* O texto ocupa toda a altura */
+  width: 40%; /* Define a largura do bloco */
+  background-color: #04394e; /* Cor de fundo azul */
+  color: white; /* Cor do texto */
+  padding: 20px 40px;
+  clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha verticalmente */
+  align-items: center; /* Alinha horizontalmente */
+  text-align: center;
+}
+
+.text-content h1 {
+  margin-bottom: 3px;
+  font-size: 4rem; /* Tamanho do título */
+  font-weight: 900;
+  color: #ffffff; /* Cor amarela */
+  line-height: 1.1;
+}
+.sec-text{
+width: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding: 0 92px;
+color: #04394e;
+line-height: 1.0;
+}
+.text-content p {
+  font-size: 1rem;
+  margin: 10px 0;
+  font-weight: 200;
+  margin-bottom: 30px;
+  width: 70%;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.styled-form {
+  width: 87%; /* Largura do formulário */
+  margin: 0 auto; /* Centraliza o formulário */
+  padding: 20px;
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre as linhas */
+ 
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre as colunas */
+  width: 100%;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento vertical entre os campos */
+  width: 100%;
+}
+form label {
+  display: flex; /* Cria um contêiner flexível */
+  flex-direction: column; /* Garante que o texto da legenda fique acima */
+  font-size: 0.9rem; /* Tamanho do texto da legenda */
+  color: #333; /* Cor do texto da legenda */
+  margin-bottom: 10px; /* Espaço entre o label e os campos subsequentes */
+font-size: 1.2rem;
+font-family: "Poppins", serif;
+font-weight: 600;
+}
+form input,
+form select,
+form textarea {
+  width: 80%; /* Garante que o campo se ajuste à largura do contêiner */
+  padding: 8px; /* Reduz o preenchimento interno para campos menores */
+  font-size: 0.9rem; /* Ajusta o tamanho do texto nos campos */
+  border: 1px solid #ccc; /* Mantém a borda */
+  background: transparent; /* Fundo transparente */
+  height: auto;
+}
+textarea {
+  resize: none; /* Remove opção de redimensionar */
+}
+
+.double-field {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os campos Número e Complemento */
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #04394e;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #036ba1;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content,
+  .image-content {
+    margin-bottom: 20px;
+  }
+
+  .double-field {
+    flex-direction: column;
+  }
+}
+.sec-text .highlight {
+  color: #04394e; /* Cor destacada (amarelo) */
+  font-weight: bold; /* Negrito para ênfase */
+  }
+.final{
+  width: 49.5%;
+}
+.form-footer .privacy-policy {
+  display: flex; /* Define um contêiner flexível para alinhar os itens */
+  flex-direction: row;
+  gap: 0.5rem; /* Espaço entre o checkbox e o texto */
+  font-size: 14px; /* Tamanho da fonte */
+  line-height: 1.5; /* Espaçamento das linhas */
+}
+
+.form-footer .privacy-policy a {
+  color: #04394e; /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.form-footer .privacy-policy a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+.form-footer .checkbox {
+  width: 16px; /* Tamanho do checkbox */
+  height: 16px;
+  cursor: pointer; /* Define o cursor como pointer */
+}
+
+.form-footer .submit-button {
+  font-size: 14px; /* Tamanho da fonte do botão */
+  padding: 0.5rem 1rem; /* Tamanho do botão */
+  background-color: #04394e; /* Cor de fundo do botão */
+  color: #f8c300; /* Cor do texto do botão */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Animação suave na cor */
+}
+
+.form-footer .submit-button:hover {
+  background-color: #031f29; /* Cor do botão ao passar o mouse */
+}
+
+.form-footer .submit-button:disabled {
+  background-color: #cccccc; /* Cinza para estado desativado */
+  cursor: not-allowed; /* Cursor para desativado */
+}
+input, textarea, select {
+  font-family: "Poppins", sans-serif;
+}

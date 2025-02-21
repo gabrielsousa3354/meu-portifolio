@@ -1,0 +1,109 @@
+/* TermosDeUso.css */
+
+:root {
+    --primary-blue: #04394e;
+    --accent-yellow: #f8c300;
+    --text-color: #333;
+    --background: #ebebeb;
+}
+
+/* Container principal */
+.termos-uso-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--background);
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Título principal */
+.termos-uso-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-yellow);
+    padding-bottom: 10px;
+}
+
+/* Subtítulos */
+.termos-uso-container h2 {
+    font-size: 1.75rem;
+    color: var(--primary-blue);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--accent-yellow);
+    padding-left: 10px;
+}
+
+/* Parágrafos */
+.termos-uso-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Negrito */
+.termos-uso-container strong {
+    color: var(--primary-blue);
+}
+
+/* Lista */
+.termos-uso-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.termos-uso-container ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Links */
+.termos-uso-container a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.termos-uso-container a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.termos-uso-footer {
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 40px;
+}
+
+.termos-uso-footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .termos-uso-container {
+        padding: 20px;
+    }
+
+    .termos-uso-container h1 {
+        font-size: 2rem;
+    }
+
+    .termos-uso-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .termos-uso-container p {
+        font-size: 0.95rem;
+    }
+}

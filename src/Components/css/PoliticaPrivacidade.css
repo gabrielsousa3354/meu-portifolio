@@ -1,0 +1,87 @@
+/* PoliticaPrivacidade.css */
+
+:root {
+    --primary-blue: #04394e;
+    --accent-yellow: #f8c300;
+    --text-color: #333;
+    --background: #ebebeb;
+  }
+  
+  /* Container principal */
+  .politica-privacidade-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--background);
+    padding: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* Título principal */
+  .politica-privacidade-container h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-yellow);
+    padding-bottom: 10px;
+  }
+  
+  /* Subtítulos */
+  .politica-privacidade-container h2 {
+    font-size: 1.75rem;
+    color: var(--primary-blue);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--accent-yellow);
+    padding-left: 10px;
+  }
+  
+  /* Parágrafos */
+  .politica-privacidade-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Negrito */
+  .politica-privacidade-container strong {
+    color: var(--primary-blue);
+  }
+  
+  /* Rodapé da página de política */
+  .politica-privacidade-footer {
+    background-color: var(--primary-blue);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 40px;
+  }
+  
+  .politica-privacidade-footer p {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 768px) {
+    .politica-privacidade-container {
+      padding: 20px;
+    }
+  
+    .politica-privacidade-container h1 {
+      font-size: 2rem;
+    }
+  
+    .politica-privacidade-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .politica-privacidade-container p {
+      font-size: 0.95rem;
+    }
+  }
+  
