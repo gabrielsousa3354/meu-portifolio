@@ -1,17 +1,14 @@
-
 .simulador-container {
   width: 50%;
-  margin: 0 auto;
+  margin: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, sans-serif;
   background-color: #ffffff;
-  
+  padding-top: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.67);
   border-radius: 8px;
- 
 }
 
 .simulador-pergunta {
@@ -23,12 +20,11 @@
   font-size: 24px;
   color: #04394e;
 }
-.simulador-opcoes p{
+.simulador-opcoes p {
   margin: 10px;
   color: #04394e;
 }
 
-/* Retângulo de descrição */
 .simulador-descricao {
   display: flex;
   align-items: center;
@@ -38,30 +34,28 @@
   border-radius: 5px;
   width: 82%;
   height: 30vh;
-  justify-content: center; /* Centraliza horizontalmente */
+  justify-content: center;
   align-items: center;
-  text-align: center; /* Garante que o texto esteja centralizado na linha */
-  line-height: 1.5; /* Ajusta o espaçamento entre linhas */
-  word-wrap: break-word; /* Permite que o texto quebre em palavras */
+  text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
   white-space: normal;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.67);
 }
 .descricao-imagem {
-  width: auto; /* A imagem ocupa 100% da largura da div */
-  height: auto; /* A imagem ocupa 100% da altura da div */
-  object-fit: cover; /* A imagem vai cobrir toda a área da div, cortando onde necessário para manter a proporção */
+  width: auto;
+  height: auto;
+  object-fit: cover;
   object-position: center;
 }
 
-
 .descricao-texto {
   font-size: 16px;
-  flex-grow: 1; /* Faz com que o texto ocupe o restante do espaço disponível */
-  word-wrap: break-word; /* Garante que o texto seja quebrado corretamente */
+  flex-grow: 1;
+  word-wrap: break-word;
   padding-left: 15px;
 }
 
-/* Opções de escolha */
 .simulador-opcoes {
   width: 100%;
   text-align: center;
@@ -78,14 +72,14 @@
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  margin: 10px auto; /* Ajusta o espaçamento entre os botões */
+  margin: 10px auto;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
- 
-  width: 88%; /* Define a largura de cada botão */
-  display: block; /* Força os botões a ficarem em linha vertical */
-  font-family: 'Qanelas', Arial, sans-serif;
+
+  width: 88%;
+  display: block;
+  font-family: "Qanelas", Arial, sans-serif;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.67);
   font-weight: 200;
 }
@@ -102,14 +96,14 @@
 }
 
 .botao-avancar {
-  background-color:#e9a136 ;
-  color:#04394e ;
+  background-color: #e9a136;
+  color: #04394e;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  font-family: 'Qanelas', Arial, sans-serif;
+  font-family: "Qanelas", Arial, sans-serif;
   width: 30%;
 }
 
@@ -134,59 +128,55 @@
 }
 
 @font-face {
-  font-family: 'Qanelas';
-  src: url('../../fonts/Radomir Tinkov  QanelasSoftBlack.otf') format('truetype');
+  font-family: "Qanelas";
+  src: url("../../fonts/Radomir Tinkov  QanelasSoftBlack.otf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-/* Aplicando a fonte */
 .simulador-container {
-  font-family: 'Qanelas', Arial, sans-serif;
+  font-family: "Qanelas", Arial, sans-serif;
 }
 
 .opcao.selected {
-  background-color: #04394e; /* Cor de fundo quando a opção é selecionada */
-  color: #f8c300; /* Cor do texto quando a opção é selecionada */
+  background-color: #04394e;
+  color: #f8c300;
 }
 
 .botao-avancar:disabled {
-  background-color: #ccc; /* Cor de fundo para o botão desabilitado */
-  cursor: not-allowed; /* Cursor indicando que o botão não está clicável */
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-/* Estilo para a barra de seleção */
 input[type="range"] {
-  width: 80%; /* Define a largura da barra */
-  height: 10px; /* Define a altura (grossura) da barra */
-  -webkit-appearance: none; /* Remove o estilo padrão da barra no Safari */
-  appearance: none; /* Remove o estilo padrão da barra */
-  background: linear-gradient(to right, #04394e, #f8c300); /* Gradiente de azul para amarelo */
-  border-radius: 5px; /* Arredonda as bordas da barra */
-  outline: none; /* Remove o contorno da barra quando selecionada */
-  transition: background 0.3s ease; /* Transição suave para o gradiente */
+  width: 80%;
+  height: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(to right, #04394e, #f8c300);
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease;
 }
 
-/* Estilo para a bolinha (thumb) */
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Remove o estilo padrão da bolinha no Safari */
-  appearance: none; /* Remove o estilo padrão da bolinha */
-  width: 20px; /* Define a largura da bolinha */
-  height: 20px; /* Define a altura da bolinha */
-  background-color: #ffffff; /* Cor de fundo da bolinha */
-  border-radius: 50%; /* Torna a bolinha redonda */
-  border: 2px solid #04394e; /* Borda da bolinha, cor azul */
-  cursor: pointer; /* Aparece o cursor de mão ao passar sobre a bolinha */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #04394e;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilo para a bolinha ao ser arrastada */
 input[type="range"]::-webkit-slider-thumb:hover {
-  background-color: #ffffff; /* Cor da bolinha ao passar o mouse */
-  transform: scale(1.2); /* Aumenta um pouco o tamanho da bolinha */
+  background-color: #ffffff;
+  transform: scale(1.2);
 }
 
-/* Estilo para a bolinha no Firefox */
 input[type="range"]::-moz-range-thumb {
   width: 20px;
   height: 20px;
@@ -197,13 +187,11 @@ input[type="range"]::-moz-range-thumb {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilo para a bolinha no Firefox ao ser arrastada */
 input[type="range"]::-moz-range-thumb:hover {
   background-color: #ffbc00;
   transform: scale(1.2);
 }
 
-/* Estilo para a bolinha no Edge */
 input[type="range"]::-ms-thumb {
   width: 20px;
   height: 20px;
@@ -214,63 +202,58 @@ input[type="range"]::-ms-thumb {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilo para a bolinha no Edge ao ser arrastada */
 input[type="range"]::-ms-thumb:hover {
   background-color: #ffbc00;
   transform: scale(1.2);
 }
-/* Estilo simplificado para o campo de valor personalizado */
+
 .opcao-personalizada {
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 100%; /* Garantir que o campo ocupe toda a largura */
-  font-family: 'Qanelas', Arial, sans-serif;
+  width: 100%;
+  font-family: "Qanelas", Arial, sans-serif;
   font-weight: lighter;
 }
 
-/* Estilo para o texto do label */
 .opcao-personalizada label {
-  display: block; /* Garante que o label ocupe toda a largura */
-  margin-bottom: 8px; /* Espaço entre o texto e o campo de entrada */
-  font-size: 14px; /* Tamanho da fonte, ajustável conforme necessidade */
-  color: #e9a136; /* Cor do texto */
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e9a136;
 }
 
-/* Estilo do campo de entrada */
 .opcao-personalizada input[type="text"] {
-  width: 100%; /* O campo ocupa 100% da largura disponível */
-  max-width: 400px; /* Limita o tamanho do campo */
-  padding: 12px; /* Aumenta o preenchimento para conforto */
-  background-color: #f0f0f0; /* Cor de fundo clara */
-  color: #04394e; /* Cor do texto */
-  font-size: 14px; /* Tamanho da fonte */
-  border: 1px solid #ccc; /* Borda cinza clara */
-  border-radius: 5px; /* Bordas arredondadas */
-  outline: none; /* Remove o contorno padrão */
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  background-color: #f0f0f0;
+  color: #04394e;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.67);
   font-weight: lighter;
 }
 
-/* Estilo ao focar no campo de entrada */
 .opcao-personalizada input[type="text"]:focus {
-  border-color: #f8c300; /* Muda a cor da borda ao focar */
+  border-color: #f8c300;
 }
-/* Importando a fonte Qanelas */
-@import url('https://fonts.googleapis.com/css2?family=Qanelas:wght@400;700&display=swap');
 
-/* Estilo específico para a pergunta de localização */
+@import url("https://fonts.googleapis.com/css2?family=Qanelas:wght@400;700&display=swap");
+
 .location-question,
 .city-input {
-  font-family: 'Qanelas', sans-serif;  /* Aplica a fonte Qanelas */
-  margin-bottom: 12px; /* Ajusta o espaçamento entre os campos */
+  font-family: "Qanelas", sans-serif;
+  margin-bottom: 12px;
 }
 
 .location-label,
 .city-label {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 5px; /* Coloca a legenda em cima e com espaço reduzido */
-  display: block; /* Faz com que a legenda ocupe toda a largura e fique à esquerda */
+  margin-bottom: 5px;
+  display: block;
   text-align: left;
   padding-top: 10px;
   padding-left: 65px;
@@ -279,22 +262,22 @@ input[type="range"]::-ms-thumb:hover {
 
 .location-select,
 .city-input-field {
-  width: 87%;  /* Campo mais largo */
-  padding: 15px; /* Reduzindo a espessura do campo */
-  margin-top: 5px; /* Diminui o espaço entre legenda e campo */
+  width: 87%;
+  padding: 15px;
+  margin-top: 5px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #ccc;  /* Borda fina */
-  box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
-  background-color: #9f9f9f;  /* Fundo cinza */
-  color: white;  /* Cor do texto branca */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #9f9f9f;
+  color: white;
   font-weight: 600;
 }
 
 .location-select:focus,
 .city-input-field:focus {
-  border: 1px solid #f8c300;  /* Cor da borda quando o campo está em foco */
-  outline: none;  /* Remove o contorno padrão */
+  border: 1px solid #f8c300;
+  outline: none;
 }
 
 .city-input-field {
@@ -302,13 +285,12 @@ input[type="range"]::-ms-thumb:hover {
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #9f9f9f;  /* Fundo cinza */
-  color: white;  /* Cor do texto branca */
+  background-color: #9f9f9f;
+  color: white;
 }
 
-/* Botões específicos para a pergunta de localização */
 .opcao-localizacao {
-  font-family: 'Qanelas', sans-serif;
+  font-family: "Qanelas", sans-serif;
   padding: 8px 12px;
   margin-top: 8px;
   border: none;
@@ -327,56 +309,51 @@ input[type="range"]::-ms-thumb:hover {
 .location-select::placeholder,
 .city-input-field::placeholder {
   color: white;
-
 }
 .selecionar-estado {
-  font-size: 1.5rem; /* Altere o tamanho conforme necessário */
-  font-weight: bold; /* Outros estilos que desejar */
-}
-/* Aplica a fonte Qanelas a todo o formulário */
-.dados-pessoais-form {
-  font-family: 'Qanelas', sans-serif; /* Certifique-se de que a fonte está sendo importada corretamente */
-  font-size: 16px;
-  color: #333; /* Cor do texto */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-/* Estilos gerais para os campos de formulário */
+.dados-pessoais-form {
+  font-family: "Qanelas", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
 .dados-pessoais-form input,
 .dados-pessoais-form select {
-  width: 87%; /* Largura igual para todos os campos */
+  width: 87%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  box-sizing: border-box; /* Garante que padding e borda sejam considerados dentro da largura do campo */
+  box-sizing: border-box;
 }
 
-/* Ajusta especificamente os campos select */
 .dados-pessoais-form select {
-  padding-right: 30px; /* Adiciona espaço extra à direita para exibir o ícone da seta do select */
+  padding-right: 30px;
 }
 .dados-pessoais-form label {
   font-weight: bold;
-  
+
   display: block;
   margin-bottom: 5px;
-   /* Distância entre a legenda e o campo */
 }
 
-/* Ajusta a largura do formulário */
 .dados-pessoais-form .field-container {
-  margin-bottom: 5px; /* Distância entre os campos */
+  margin-bottom: 5px;
 }
 .dados-pessoais-form .field-container label {
-  text-align: left; /* Garante que as legendas fiquem alinhadas à esquerda, mesmo com o estilo .simulador-opcoes */
+  text-align: left;
   padding-left: 60px;
 }
-form{
-padding-top: 15px;
+form {
+  padding-top: 15px;
 }
 .mensagem-agradecimento {
-  background-color: #04394e; /* Cor de fundo azul */
-  color: #f8c300; /* Cor do texto em amarelo */
+  background-color: #04394e;
+  color: #f8c300;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
@@ -394,12 +371,76 @@ padding-top: 15px;
   font-size: 16px;
   margin-bottom: 0;
 }
-.simu{
+.simu {
   background-color: #e9a136;
   height: 100vh;
   width: 100%;
+  border-top: #e9a136 solid 50px;
+  border-bottom: #e9a136 solid 50px;
 }
-body{
-  height: 100%;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-top: 5px solid #e9a136;
+}
+
+.modal h2 {
+  color: #04394e;
+  margin-bottom: 15px;
+}
+
+.modal p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e9a136;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "Qanelas", Arial, sans-serif;
+}
+
+.modal-close-button:hover {
+  background: #04394e;
 }

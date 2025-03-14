@@ -1,10 +1,10 @@
 .Footer {
-    background-color: #04394e; /* Cor de fundo para o rodapé */
+    background-color: #04394e;
     padding: 40px 20px;
     font-size: 14px;
     width: 100%;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 0; /* Remover qualquer margem adicional */
+    margin-top: 0;
     font-family: "Poppins", sans-serif;
   }
   
@@ -17,7 +17,7 @@
     text-align: center;
     color: #ffffff;
     align-items: center;
-    background-color: #04394e; /* Cor de fundo para garantir que toda a área do rodapé tenha o mesmo fundo */
+    background-color: #04394e; 
   }
   
   .footer-column {
@@ -38,7 +38,7 @@
   }
   
   .footer-column a {
-    color: #ffffff; /* Ajuste a cor para branco para melhorar o contraste */
+    color: #ffffff; 
     text-decoration: none;
   }
   
@@ -50,9 +50,9 @@
     text-align: center;
     font-size: 12px;
     color: #666;
-    background-color: #04394e; /* Garantir que o fundo do copyright também seja o mesmo */
+    background-color: #04394e; 
     padding: 10px 0;
   }
   .barra {
-    margin: 0 10px;  /* Adiciona 10px de espaço antes e depois da barra */
+    margin: 0 10px;
 }

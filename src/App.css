@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+/* Certifique-se de que o layout inteiro ocupe 100% da tela */
+html, body, #root {
+  height: 100%;  /* Garantir que o root ocupe toda a altura da tela */
+  margin: 0;     /* Remover margens padrão do body */
+  padding: 0;    /* Remover padding padrão do body */
+  width: 100%;    /* Garantir que ocupe toda a largura */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo de largura e altura */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  width: 100%;         /* Faz o contêiner ocupar 100% da largura */
+  height: 100%;        /* Faz o contêiner ocupar 100% da altura */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Ajustar o header e footer para se ajustar ao restante do conteúdo */
+header, footer {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
