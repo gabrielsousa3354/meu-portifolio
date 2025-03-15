@@ -56,3 +56,22 @@
   .barra {
     margin: 0 10px;
 }
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Empilhar as colunas */
+      text-align: center; /* Alinhar o texto no centro */
+  }
+
+  .footer-column {
+      flex: 1 0 100%; /* Garantir que cada coluna ocupe 100% da largura */
+      margin-bottom: 15px; /* Aumentar o espaço entre as colunas */
+  }
+
+  .footer-logo {
+      max-width: 120px; /* Reduzir o tamanho da logo em telas pequenas */
+  }
+
+  .footer-copyright {
+      font-size: 10px; /* Diminuir o tamanho da fonte no rodapé */
+  }
+}

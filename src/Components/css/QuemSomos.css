@@ -120,3 +120,67 @@ body.quem-somos-page {
   font-size: 1.5vh;
   color: #666;
 }
+@media (max-width: 768px) {
+  .top-text {
+    flex: none;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 100;
+    word-wrap: break-word;
+    white-space: normal; /* Permite a quebra de linha */
+    max-width: 90%;
+    align-self: center;
+  }
+
+  .top-text strong {
+    display: inline; /* Garante que a tag <strong> se comporte normalmente */
+  }
+
+  .top-text strong:last-child {
+    display: block; /* Força a palavra "realidade" a ir para a linha abaixo */
+    margin-top: 1vh; /* Espaço entre as linhas */
+  }
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 5vw;
+    margin-bottom: 2vh;
+  }
+
+  .text-section {
+    padding: 0 5vw;
+    margin-bottom: 2vh;
+  }
+
+  .main-description {
+    text-align: justify;
+  }
+
+  .main-image {
+    display: block;
+    width: 45%;
+    margin: 0 auto 2vh auto;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards */
+    align-items: stretch;
+    gap: 2vw;
+    width: 90%; /* Ajusta a largura da container para não ultrapassar */
+    margin: 0 auto;
+    padding: 0 5vw; /* Padding pequeno à esquerda e direita */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura total */
+  }
+
+  .card {
+    width: 32%; /* Garantir que caibam três cards sem ultrapassar */
+    max-width: 230px; /* Limita a largura dos cards */
+    margin-bottom: 2vh;
+    padding: 2vh 1vw; /* Padding reduzido nos cards */
+  }
+}
+
+
+
