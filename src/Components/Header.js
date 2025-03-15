@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/Header.css";
 
 const Header = () => {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <header className="header">
       <div className="navbar">
@@ -11,7 +17,10 @@ const Header = () => {
             <img src="./Images/logo2.png" alt="Logo da Empresa" />
           </Link>
         </div>
-        <ul className="nav-links">
+
+
+        {/* Links de navegação */}
+        <ul className={`nav-links ${menuActive ? 'active' : ''}`}>
           <li>
             <Link to="/simulador">Simulador</Link>
           </li>
@@ -22,31 +31,7 @@ const Header = () => {
             <Link to="/sejaparecer">Seja Parceiro</Link>
           </li>
         </ul>
-        <div className="contact-icons">
-          <a
-            href="https://wa.me/5511914930509"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="./Images/whatsapp-icon.png" alt="WhatsApp" />
-          </a>
-          <a
-            className="face"
-            href="https://facebook.com/suaempresa"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="./Images/facebook-icon.png" alt="Facebook" />
-          </a>
-          <a
-            className="insta"
-            href="https://www.instagram.com/acreditsolucoesimob?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/images/instagram-icon.png" alt="Instagram" />
-          </a>
-        </div>
+
       </div>
     </header>
   );

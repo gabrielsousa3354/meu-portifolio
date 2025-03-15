@@ -8,6 +8,7 @@ import QuemSomos from './Components/QuemSomos';
 import SejaParceiro from './Components/SejaParceiro';
 import PoliticaPrivacidade from './Components/PoliticaPrivacidade';
 import TermosDeUso from './Components/TermosUso'; // Importando Termos de Uso
+import FloatingButton from './Components/FloatingButton'; // Importando o botão flutuante
 
 const App = () => {
   return (
@@ -15,7 +16,7 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/simulador" element={<Simulador />} />
           <Route path="/quemsomos" element={<QuemSomos />} />
@@ -25,6 +26,7 @@ const App = () => {
         </Routes>
       </main>
       <Footer />
+      <FloatingButton /> {/* Colocando o botão flutuante */}
     </Router>
   );
 };

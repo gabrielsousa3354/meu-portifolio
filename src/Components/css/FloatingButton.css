@@ -1,0 +1,128 @@
+/* Container do botão flutuante */
+.floating-button {
+    position: fixed;
+    bottom: 20px;  /* Distância do botão da parte inferior */
+    right: 20px;  /* Distância do botão da parte direita */
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botão flutuante */
+.btn {
+    background-color: transparent;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 60px;  /* Tamanho padrão do botão */
+    height: 60px; /* Tamanho padrão do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover no botão */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Imagem dentro do botão, ocupando 100% do espaço */
+.btn img {
+    width: 100%;  /* A imagem ocupa 100% do botão */
+    height: 100%;
+    object-fit: cover;  /* A imagem preenche o botão sem distorção */
+}
+
+/* Links de redes sociais */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;  /* Distância dos links em relação ao botão */
+    right: 0;
+    z-index: 998;
+    opacity: 0;  /* Inicialmente invisível */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilo dos links de redes sociais */
+.social-links a {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de hover nos links de redes sociais */
+.social-links a:hover {
+    background-color: #f8c300;
+    transform: scale(1.1);
+}
+
+/* Ajuste do tamanho das imagens dentro dos links de redes sociais */
+.social-links img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+/* Animação de abertura do menu de redes sociais */
+.social-links.open {
+    opacity: 1;
+    transform: translateY(0);  /* Move os links para a posição original */
+}
+
+/* Animação dos links ao abrir */
+.social-links a {
+    transform: translateY(-10px);
+}
+
+/* Animação suave de deslizamento para abrir os links */
+.social-links.open a {
+    animation: slide-up 0.3s forwards;
+}
+
+/* Responsividade para tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .btn {
+        width: 50px;  /* Botão menor em tablets */
+        height: 50px;
+    }
+
+    .social-links a {
+        width: 40px;  /* Ajustando os ícones */
+        height: 40px;
+    }
+
+    .social-links img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* Responsividade para celulares (max-width: 400px) */
+@media (max-width: 400px) {
+    .btn {
+        width: 40px;  /* Botão ainda menor para celulares */
+        height: 40px;
+    }
+
+    .social-links a {
+        width: 35px;  /* Ajustando os ícones */
+        height: 35px;
+    }
+
+    .social-links img {
+        width: 50%;
+        height: 50%;
+    }
+}

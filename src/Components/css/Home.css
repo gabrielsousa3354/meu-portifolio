@@ -100,3 +100,154 @@
   .empty-space {
     width: 30%;
   }
+ /* Media Query para telas menores (<=768px) */
+ /* Media Query para telas menores (<=768px) */
+/* Media Query para telas menores (<=768px) */
+/* Media Query para telas menores (<=768px) */
+@media (max-width: 768px) {
+  /* Remover a frase adicionada */
+  .top-banner::after {
+    content: none;
+  }
+
+  /* Exibe uma linha de separação para maior destaque */
+  .divider {
+    width: 100%;
+    height: 10px;
+    background: #faa934;
+    margin-top: 10px;
+  }
+
+  /* Torna os itens da lista como cards em 4 colunas e centraliza-os */
+  .features-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    /* Limita o tamanho máximo da lista */
+    margin-left: auto;  /* Move a lista para a direita */
+    margin-right: 0;    /* Garante que a margem direita seja zero */
+    text-align: center; /* Garante que o conteúdo do card também esteja centralizado */
+    overflow: hidden;   /* Garante que nada saia da área visível */
+  }
+  
+
+  /* Estiliza cada card */
+  .feature-item {
+    background-color: #04394e;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    max-width: 100%; /* Garante que os cards não ultrapassem a largura da div */
+  }
+
+  /* Ajusta o tamanho da imagem no card */
+  .feature-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* Ajusta o texto dentro dos cards */
+  .feature-item p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  /* Oculta o espaço vazio */
+  .empty-space {
+    display: none;
+  }
+  .central-message {
+    display: none;
+  }
+
+  /* Remove a linha de separação */
+  hr {
+    border-top: none;
+  }
+}
+
+
+  /* Ajustes adicionais para telas muito pequenas (<=480px) */
+  @media (max-width: 480px) {
+    .top-banner h1 {
+      font-size: 1.5rem;
+    }
+  
+    /* Remover a frase adicionada */
+    .top-banner::after {
+      content: none;
+    }
+  
+    /* Exibe uma linha de separação para maior destaque */
+    .divider {
+      width: 100%;
+      height: 10px;
+      background: #faa934;
+      margin-top: 10px;
+    }
+  
+    /* Torna os itens da lista como cards em 4 colunas e centraliza-os */
+    .features-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+      gap: 10px; /* Menor espaço entre os cards */
+      padding: 10px; /* Ajuste no padding para diminuir o tamanho da lista */
+      border-radius: 5px;
+      margin-left: auto;  /* Move a lista para a direita */
+      margin-right: 0;    /* Garante que a margem direita seja zero */
+      text-align: center;
+      overflow: hidden;
+      max-height: 60vh; /* Limita a altura da lista */
+      overflow-y: auto; /* Permite rolar caso os itens excedam a altura */
+    }
+  
+    /* Estiliza cada card */
+    .feature-item {
+      background-color: #04394e;
+      padding: 10px; /* Reduz o padding dentro do card */
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      max-width: 100%;
+    }
+  
+    /* Ajusta o tamanho da imagem no card */
+    .feature-item img {
+      width: 30px; /* Reduz o tamanho da imagem */
+      height: 30px; /* Reduz o tamanho da imagem */
+      margin-bottom: 5px; /* Diminui a margem entre a imagem e o texto */
+    }
+  
+    /* Ajusta o texto dentro dos cards */
+    .feature-item p {
+      font-size: 0.8rem; /* Diminui o tamanho do texto */
+      color: #ffffff;
+    }
+  
+    /* Oculta o espaço vazio */
+    .empty-space {
+      display: none;
+    }
+  
+    .central-message {
+      display: none;
+    }
+  
+    /* Remove a linha de separação */
+    hr {
+      border-top: none;
+    }
+  }
+  
+
+  
+  

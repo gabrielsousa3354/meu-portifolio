@@ -373,7 +373,7 @@ form {
 }
 .simu {
   background-color: #e9a136;
-  height: 100vh;
+
   width: 100%;
   border-top: #e9a136 solid 50px;
   border-bottom: #e9a136 solid 50px;
@@ -444,3 +444,234 @@ form {
 .modal-close-button:hover {
   background: #04394e;
 }
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  .simulador-container {
+    width: 90%;
+    padding: 10px;
+    flex-grow: 1;
+    padding-bottom: 20px;
+  }
+
+  .simulador-pergunta h2 {
+    font-size: 18px;
+  }
+
+  .simulador-descricao {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .simulador-container .selecionar-estado {
+    font-size: 1.2rem;
+  }
+
+  .location-select,
+  .city-input-field {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .location-select option {
+    font-size: 16px;
+  }
+
+  .botao-avancar {
+    width: 80%;
+    margin: 0 auto;
+    padding: 8px 16px;
+  }
+
+  .simulador-opcoes p {
+    font-size: 14px;
+  }
+
+  .opcao {
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .barra-progresso {
+    width: 100%;
+  }
+
+  .opcao-personalizada input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .location-label,
+  .city-label {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  .simu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dados-pessoais-form {
+    padding-bottom: 20px;
+  }
+
+  .dados-pessoais-form label {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .dados-pessoais-form .field-container label {
+    padding-left: 0;
+  }
+
+  .dados-pessoais-form input,
+  .dados-pessoais-form select {
+    width: 100%;
+  }
+
+  .mensagem-agradecimento h2 {
+    font-size: 20px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-close-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .simulador-container {
+    width: 90%;
+    padding: 10px;
+    flex-grow: 1;
+    padding-bottom: 20px;
+  }
+
+  .simulador-pergunta h2 {
+    font-size: 16px;
+  }
+
+  .simulador-descricao {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .simulador-container .selecionar-estado {
+    font-size: 1.1rem;
+  }
+
+  .location-select,
+  .city-input-field {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .location-select option {
+    font-size: 14px;
+  }
+
+  .botao-avancar {
+    width: 80%;
+    margin: 0 auto;
+    padding: 6px 12px;
+  }
+
+  .simulador-opcoes p {
+    font-size: 12px;
+  }
+
+  .opcao {
+    padding: 6px 12px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .barra-progresso {
+    width: 100%;
+  }
+
+  .opcao-personalizada input[type="text"] {
+    padding: 8px;
+    font-size: 12px;
+    width: 50vh;
+  }
+  .simulador-container .simulador-descricao p {
+    display: none !important; /* Esconde a frase */
+  }
+  .location-label,
+  .city-label {
+    padding-left: 8px;
+    font-size: 12px;
+  }
+
+  .simu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dados-pessoais-form {
+    padding-bottom: 20px;
+  }
+
+  .dados-pessoais-form label {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .dados-pessoais-form .field-container label {
+    padding-left: 0;
+  }
+
+  .dados-pessoais-form input,
+  .dados-pessoais-form select {
+    width: 100%;
+  }
+
+  .mensagem-agradecimento h2 {
+    font-size: 16px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal-close-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding-top: 20px;
+  }
+
+  /* Ajuste da largura do campo de valor do imóvel */
+  .simulador-container .valor-imovel {
+    width: 70%; /* Reduz a largura do campo para o valor do imóvel */
+    margin: 0 auto;
+  }
+
+  /* Desativar as imagens na pergunta do estado e deixar apenas o texto */
+  .simulador-container .selecionar-estado img {
+    display: none; /* Esconde as imagens */
+  }
+}
+
+

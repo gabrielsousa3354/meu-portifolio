@@ -1,27 +1,42 @@
-.header {
-  background-color: #04394e;
-  padding: 10px 20px;
-  font-family: "Poppins", sans-serif;
+/* Garante que o body ocupe 100% da largura da tela */
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
+/* Navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;  /* Garante que a logo e os links ocupem espaços distintos */
   align-items: center;
   height: 70px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: #04394e;
+  padding: 0 20px; /* Adiciona um espaçamento horizontal */
 }
 
+/* Logo */
 .logo img {
   height: 50px;
+  padding-left: 3px;
+  /* Você pode ajustar a largura da logo aqui, caso precise */
 }
 
+/* Links de navegação */
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
   padding: 0;
+  flex-grow: 1; /* Faz com que os links ocupem o espaço restante */
+  justify-content: center; /* Centraliza os links */
+  position: relative; /* Para poder usar o transform */
+  /* Calcular o centro dos links considerando a logo */
+  margin-right: 1%;
 }
 
 .nav-links li {
@@ -42,107 +57,90 @@
 }
 
 .nav-links a:hover {
-  background-color: rgb(248, 195, 0);
+  background-color: rgb(248, 195, 0); /* Cor ao passar o mouse */
   color: #04394e;
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contact-icons {
-  display: flex;
-  gap: 1rem;
-}
-
-.contact-icons a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 30%;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.contact-icons img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
-
+/* Media Query para telas menores que 768px */
 @media (max-width: 768px) {
+  /* Navbar ajustada para telas menores */
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    height: auto;
+    padding-bottom: 10px;
   }
 
+  /* Logo ocupa 50% da largura */
+  .logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  /* Links de navegação ocupam 100% da largura, centralizados */
   .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-
-  .contact-icons {
+    width: 100%;  /* Garante que a div ocupe toda a largura disponível */
+    display: flex;
+    justify-content: center;  /* Centraliza os links horizontalmente */
     margin-top: 10px;
-    justify-content: flex-start;
-    width: 100%;
+    flex-direction: row;  /* Coloca os links na mesma linha */
+    gap: 15px;  /* Ajusta o espaço entre os links */
+    align-items: center;
+    padding: 0 10px;  /* Adiciona espaço nas laterais */
+  }
+  
+  .nav-links li {
+    width: auto;  /* Remove a largura de 100%, permitindo que os itens sejam compactos */
+    text-align: center;  /* Alinha o texto no centro */
   }
 
-  .contact-icons a {
-    width: 30px;
-    height: 30px;
+  .nav-links a {
+    font-size: 0.9rem;  /* Diminui o tamanho da fonte dos links */
+    padding: 10px 15px;
+    display: block;  /* Garante que o link ocupe toda a área disponível */
+  }
+}
+
+/* Ajustes para telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .logo img {
     height: 40px;
   }
 
-  /* Menu hamburguer */
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-    font-size: 2rem;
-    color: #fff;
-  }
-
-  .nav-links.active {
+  .nav-links {
+    width: 100%;
     display: flex;
+
+    align-items: flex-start; /* Alinha os links ao início */
+    margin: 0 auto;
+    padding: 0;
   }
 
   .nav-links li {
-    width: 100%;
-  }
-
-  /* Ajuste de ícones para mobile */
-  .contact-icons {
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 10px;
+    width: auto;  /* Remove o width 100% para permitir que os links se ajustem melhor */
+    text-align: left;  /* Alinha o texto à esquerda */
   }
 
   .nav-links a {
     font-size: 0.9rem;
-    padding: 8px 16px;
-  }
-
-  .logo img {
-    height: 35px;
-  }
-
-  .contact-icons {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  /* Ajustes para o alinhamento de ícones em telas pequenas */
-  .contact-icons a {
-    width: 35px;
-    height: 35px;
+    padding: 10px;
+    width: auto;  /* Ajusta a largura do link */
   }
 }
