@@ -79,14 +79,14 @@ body.quem-somos-page {
 }
 
 .main-description {
-  font-size: 3vh;
+  font-size: 2vh;
   line-height: 4vh;
   color: #666;
   text-align: justify;
 }
 
 .main-image {
-  width: 40vw;
+  width: 35vw;
   max-width: 100%;
   height: auto;
 }
@@ -141,10 +141,10 @@ body.quem-somos-page {
     margin-top: 1vh; /* Espaço entre as linhas */
   }
   .main-content {
-    flex-direction: column;
+    
     align-items: center;
     text-align: center;
-    padding: 0 5vw;
+    
     margin-bottom: 2vh;
   }
 
@@ -158,27 +158,14 @@ body.quem-somos-page {
   }
 
   .main-image {
-    display: block;
-    width: 45%;
-    margin: 0 auto 2vh auto;
+    display: none;
   }
-
-  .cards-container {
-    display: flex;
-    justify-content: center; /* Centraliza os cards */
-    align-items: stretch;
-    gap: 2vw;
-    width: 90%; /* Ajusta a largura da container para não ultrapassar */
-    margin: 0 auto;
-    padding: 0 5vw; /* Padding pequeno à esquerda e direita */
-    box-sizing: border-box; /* Inclui o padding no cálculo da largura total */
-  }
-
   .card {
-    width: 32%; /* Garantir que caibam três cards sem ultrapassar */
-    max-width: 230px; /* Limita a largura dos cards */
-    margin-bottom: 2vh;
-    padding: 2vh 1vw; /* Padding reduzido nos cards */
+   display: none;
+  }
+  .final-section {
+    padding-top: 5vh; /* Respiro no topo */
+    min-height: 30vh; /* Garante espaço adequado */
   }
 }
 

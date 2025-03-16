@@ -85,7 +85,9 @@
     color: #ffffff;
     font-size: 5rem; 
   }
-  
+  .central-message {
+    margin-left: -80px; /* Ajuste fino para mover ligeiramente à esquerda */
+  }
   .main-text span {
     display: block; 
     font-size: 4rem; 

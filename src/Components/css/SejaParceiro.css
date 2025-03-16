@@ -127,6 +127,23 @@ textarea {
 button:hover {
   background-color: #036ba1;
 }
+.final label {
+  width: 49.2%;
+}
+.privacy-policy {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.5rem; /* Espaço entre a checkbox e o texto */
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+
 
 @media (max-width: 768px) {
   .image-text-section {
@@ -224,12 +241,12 @@ button:hover {
     word-wrap: break-word; /* Garante que o texto da legenda quebre e não ultrapasse o campo */
     width: 100%; /* Garante que a label ocupe a largura disponível */
   }
-
   .final label {
-    width: 100%; /* Garante que o label do último campo ocupe 100% da largura */
-    white-space: normal; /* Permite que o texto da legenda quebre em várias linhas se necessário */
+    width: 100% !important;
+    font-size: 1.2rem !important;
   }
-
+  
+  
   .form-footer .checkbox-container {
     display: flex;
     flex-direction: column;
@@ -245,12 +262,9 @@ button:hover {
   }
 
   .submit-button {
-    width: 100%;
+    width: 80%;
   }
 
-  .final {
-    width: 100%;
-  }
 
   .form-footer .checkbox-container {
     display: flex;
@@ -261,7 +275,7 @@ button:hover {
   }
 
   .form-footer .submit-button {
-    width: 100%; /* Faz o botão ocupar toda a largura */
+    width: 80%; /* Faz o botão ocupar toda a largura */
   }
 
   .form-footer .checkbox {

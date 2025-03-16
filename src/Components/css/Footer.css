@@ -57,21 +57,38 @@
     margin: 0 10px;
 }
 @media (max-width: 768px) {
+  /* Estilo do footer em telas menores */
   .footer-container {
-      flex-direction: column; /* Empilhar as colunas */
-      text-align: center; /* Alinhar o texto no centro */
+    flex-direction: column; /* Empilhar as colunas */
+    align-items: center; /* Centralizar as colunas */
+    padding: 0 5vw; /* Padding ajustado */
   }
 
   .footer-column {
-      flex: 1 0 100%; /* Garantir que cada coluna ocupe 100% da largura */
-      margin-bottom: 15px; /* Aumentar o espaço entre as colunas */
+    width: 100%; /* Garante que cada coluna ocupe 100% da largura */
+    text-align: center; /* Alinha o texto centralizado */
+    margin-bottom: 8px; /* Diminui o espaço entre as colunas */
   }
 
   .footer-logo {
-      max-width: 120px; /* Reduzir o tamanho da logo em telas pequenas */
+    max-width: 100px; /* Reduz a logo para caber melhor */
+    margin-bottom: 1.5vh; /* Dá um pequeno espaçamento abaixo da logo */
+  }
+
+  .footer-column p {
+    font-size: 12px; /* Ajusta o tamanho da fonte dos parágrafos */
+    margin: 0;
+  }
+
+  .footer-column a {
+    font-size: 12px; /* Ajusta o tamanho da fonte dos links */
+    display: inline-block;
+    margin: 0 5px; /* Dá espaço entre os links */
   }
 
   .footer-copyright {
-      font-size: 10px; /* Diminuir o tamanho da fonte no rodapé */
+    font-size: 10px; /* Tamanho menor para o copyright */
+     /* Dá um respiro em cima do copyright */
   }
 }
+

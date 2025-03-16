@@ -35,8 +35,7 @@ html, body {
   flex-grow: 1; /* Faz com que os links ocupem o espaço restante */
   justify-content: center; /* Centraliza os links */
   position: relative; /* Para poder usar o transform */
-  /* Calcular o centro dos links considerando a logo */
-  margin-right: 1%;
+  margin-right: 15%;
 }
 
 .nav-links li {

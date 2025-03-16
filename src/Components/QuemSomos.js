@@ -17,12 +17,19 @@ const QuemSomos = () => {
         <div className="text-section">
           <h2 className="main-title">Sobre nós</h2>
           <p className="main-description">
-            Nós, da ACREDIT, estamos aqui para descomplicar seu processo de
-            financiamento imobiliário, garantindo agilidade e tranquilidade, com
-            as melhores taxas do mercado e parcelas que cabem no seu bolso.
-            Viemos para transformar seus sonhos em realidade. Oferecemos suporte
-            do início do fim do processo, e você não precisa nem sair de casa. É
-            tudo online e gratuito. Conte conosco!
+          Nós, da ACREDIT, nascemos com um propósito claro: ajudar você a transformar seu sonho da casa própria em realidade. Sabemos que o processo de financiamento imobiliário pode ser complexo, e é por isso que trabalhamos para torná-lo mais simples, ágil e acessível.
+
+Somos uma empresa jovem no mercado, mas já chegamos para fazer a diferença, oferecendo um atendimento personalizado e humanizado. Acreditamos que cada cliente é único e merece um suporte exclusivo, do início ao fim da jornada, sem burocracia e sem complicações.
+
+Nosso compromisso é garantir as melhores taxas do mercado, com condições que realmente cabem no seu bolso. E o melhor: todo o processo é 100% online e gratuito. Você não precisa sair de casa para conquistar o seu imóvel dos sonhos!
+<br></br>
+Nossos valores:<br></br>
+✅ Transparência e confiança em cada etapa do financiamento;<br></br>
+✅ Atendimento personalizado para entender suas necessidades;<br></br>
+✅ Inovação e tecnologia para simplificar sua jornada;<br></br>
+✅ Compromisso em oferecer sempre as melhores condições;<br></br>
+
+Na ACREDIT, não apenas financiamos imóveis, financiamos sonhos. Conte conosco para dar esse passo com segurança e tranquilidade!
           </p>
         </div>
         <img
